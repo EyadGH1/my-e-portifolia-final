@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ed4c7da091.js" crossorigin="anonymous"></script>
+    <title>Eyad <Al-Ghawanmeh></title>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("YOUR_PUBLIC_KEY");
+   })();
+</script>
+<script src="index.js"></script>
+</head>
+<body>
+  <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+          <figure id="personal__logo">
+              <img src="./assets/logo.png">
+          </figure>
+          <ul class="" id="nav__links">
+              <li class="nav__link">
+                  <a href="#" class="nav__link--anchor
+                  link__hover-effect
+                  link__hover-effect--black">About</a>
+              </li>
+              <li class="nav__link">
+                <a href="#" class="nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black">Project</a>
+            </li>
+            <li class="nav__link" onclick="toggleModel()">
+                <a href="#" class="nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black">Contact</a>
+            </li>
+            <li class="nav__link click" onclick="toggleContarst()">
+                <a href="#" class="nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black" >
+                <i class="fa-solid fa-circle-half-stroke"></i></a>
+            </li>
+          </ul>
+      </nav>
+      <header class="header">
+          <div class="header__contact">
+              <h1 class="title">Al-Salam Aleikum</h1>
+              <h1 class="title blue"> I'm Eyad</h1>
+              <p class="header__para">A <b class="blue">Frontend Software Engineer </b> with a great passion for building web applications that make users experiances
+                  great.
+                  <br>
+                Here's a bit more <b class="blue click" *onclick="toggleModel()">about me.</b>
+
+                </p>
+                <div class="social__list">
+                    <a href="#" target="_blank" class="social__link click">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/EyadGH1" target="_blank" class="social__link click">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="social__link click">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </a>
+                </div>
+          </div>
+      </header>
+      <button class="mail__btn click" onclick="toggleModel()">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+          <div class="scroll__icon click"></div>
+      </a>
+      <div class="model">
+          <div class="model__half model__about">
+              <h3 class="model__title model__title--about">Here's a bit about me</h3>
+              <h4 class="model__sub-title model__sub--about">Frontend Software Engineer</h4>
+              <p class="model__para"> I am a 17 yaer old <span class="blue"> software engineer </span> with a huge pastion towards software engineering.
+                  <br>
+                  I am currently working on independent projects to gain more experince I am a  <span class="blue"> fast learner </span> that always tries to improve him self and learn more.
+              </p>
+              <div class="model__langs">
+                  <figure class="model__lang">
+                    <img src="./assets/html.jpg" alt="" class="model__about--img">
+                <span class="lang__name">HTML</span>
+                </figure>
+                <figure class="model__lang">
+                    <img src="./assets/css.jpg" alt=""  class="model__about--img">
+                <span class="lang__name">CSS</span>
+                </figure>
+                <figure class="model__lang">
+                    <img src="./assets/js.jpg" alt=""  class="model__about--img">
+                <span class="lang__name">JAVASCRIPT</span>
+                </figure>
+                <figure class="model__lang">
+                    <img src="./assets/react.jpg" alt=""  class="model__about--img">
+                <span class="lang__name">REACT</span>
+                </figure>
+              </div>
+              
+          </div>
+          <div class="model__half model__contact">
+                  <h3 class="model__title model__title--contact"> Let's have chat!</h3>
+                  <h3 class="model__sub-title modelsub-title--contact">
+                      I'm currently open to new opportunities.
+                  </h3>
+                  <form id="contact__form" onsubmit="contact(event)">
+                      <div class="form__item">
+                          <label class="form__item--label" for="name">Name</label>
+                          <input class="input" name="user_name" type="text" required>
+                      </div>
+                      <div class="form__item">
+                        <label class="form__item--label" for="name">Email</label>
+                        <input class="input" name="user_email" type="email" required>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" for="name">Message</label>
+                        <textarea class="input" name="message" type="text"required></textarea>
+                    </div>
+                    <button id=" contact__submit" class="form__submit"> Send it my way</button>
+                  </form>
+                  <div class="model__overlay model__overlay--loading">
+                      <i class="fas fa-spinner"></i>
+                  </div>
+                  <div class="model__overlay model__overlay--suc">
+                      Thanks for the Message! looking forward to speak with you soon.
+                  </div>
+        </div>
+        <i class="fas fa-times model__exit click" onclick="toggleModel()"></i>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0">
+      <img src="./assets/circle.svg" class="shape shape--1">
+      <img src="./assets/squiggly.svg" class="shape shape--2">
+      <img src="./assets/circle.svg" class="shape shape--3">
+      <img src="./assets/triangle.svg" class="shape shape--4">
+      <img src="./assets/circle.svg" class="shape shape--5">
+      <img src="./assets/squiggly.svg" class="shape shape--6">
+      <img src="./assets/circle.svg" class="shape shape--7">
+      <img src="./assets/semi circle.svg" class="shape shape--8">
+  </section>
+  <section id="projects">
+      <div class="container">
+          <div class="row">
+              <h1 class="section__title">
+                  Here are some of my <span class="blue">projects</span>
+              </h1>
+              <ul class="projects__list">
+                  <li class="project">
+                      <div class="project__wrapper">
+                          <img src="./assets/blinker mockup.png" alt="" class="project__img">
+                          <div class="project__wrapper__background"></div>
+                          <div class="project__des">
+                              <h3 class="project__des--title">
+                                  Car Sales Project
+                              </h3>
+                              <h4 class="projcet__des--sub-title">
+                                  Html, CSS, JavaScript,
+                              </h4>
+                              <p class="project__des--para">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident est
+                                   mollitia nesciunt praesentium possimus aliquam. Expedita ea quo quia aliquid
+                                   praesentium quas nostrum molestiae fuga! Molestias cum velit ad modi.
+                              </p>
+                              <div class="project__des--links">
+                                  <a href="" class="project__des--link">
+                                    <i class="fa-brands fa-github"></i>
+                                  </a>
+                                  <a href="https://github.com/EyadGH1" class="project__des--link">
+                                    <i class="fas fa-link"></i>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </section>
+  <section id="footer">
+      <div class="container">
+          <div class="row footer__row">
+          <figure>
+              <img src="./assets/logo.png" class="footer__logo--img">
+          </figure>
+          <div class="footer__social--list">
+              <a href="#" class="footer__social--link 
+              link__hover-effect
+              link__hover-effect--white">Github
+            </a>
+            <a href="#" class="footer__social--link 
+            link__hover-effect
+            link__hover-effect--white">LinkedIn
+          </a>
+          <a href="#" class="footer__social--link 
+          link__hover-effect
+          link__hover-effect--white">Contact
+        </a>
+        <a href="#" class="footer__social--link 
+        link__hover-effect
+        link__hover-effect--white">Resume
+      </a>
+      </div>
+      <div class="footer__copyright">
+          Copyright &copy; 2022 Eyad Al-Ghawanmeh
+      </div>
+    </div>
+    </div>
+  </section>
+</body>
+</html>
