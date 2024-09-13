@@ -4,17 +4,17 @@
 let isModelOpen = false 
 let contrastToggle = false
 const scaleFactor = 1 /20
+document.addEventListener("mousemove",
 function moveBackground(event){
     const shapes = document.querySelectorAll(".shape");
     const x = event.clientX * scaleFactor;
-    const y = event.cleintY * scaleFactor;
+    const y = event.clientY * 1/15;
 
     for ( let i = 0; i < shapes.length; ++i) {
         const isodd = i % 2 !== 0
         const oddint = isodd ? -1 : 1;
-        shapes[i].style.transform = `translate(${x}px, ${y}px)`
-    }
-}
+        shapes[i].style.transform = `translate(${x}px, ${y}%)`
+}})
 function toggleContarst(){
     contrastToggle = !contrastToggle
     if(contrastToggle){

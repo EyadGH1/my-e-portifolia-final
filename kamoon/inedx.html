@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kamoon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+<script src="hi.js"></script>
+<script src="https://kit.fontawesome.com/ed4c7da091.js" crossorigin="anonymous"></script>
+</head>
+<body id="home">
+    <!-- Nav -->
+    <nav>   
+        <figure class="logo">
+         <h1 class="logo1">Kamoon</h1>
+        </figure>
+        <div class="search-bar">
+            <input type="search" class="search">
+            <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div>
+        <ul class="nav-links">
+            <li class="nav-link"><a href="./about.html"> about</a></li>
+            <li class="nav-link"><a href="./login.html"> log in</a></li>
+           
+            <li class="nav-link"><a href=""> home</a></li>
+            <li class="nav-link"><a href="#lands"> lands</a></li>
+           <li class="nav-link click" onclick="toggleContarst()">
+            <i class="fa-solid fa-anchor"></i>    </li>
+          </ul>
+        </ul>
+        </div>
+       </nav>
+<!-- landing-->
+       <section id="landing" onmousemove="moveBackground(event)" >
+        <div class="row">
+        <span class="des-container">
+        <h1 class="landing-head"> Kamoon</h1>
+        <pre class="des-p">    the best website for buying and
+    selleing lands in the hole kingdom</pre>
+    <ul class=" des-links">
+        <li class="des-link"><a href="https://www.facebook.com/profile.php?id=61551671862690&locale=ar_AR" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+        <li class="des-link"><a href="https://www.instagram.com/kamoonrestaurant/?hl=ar" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+        </span>
+        <span class="slide-show">
+            <h2 class="slide-show-h"> some of our lands</h2>
+        </span>
+        </div>
+    </section>
+
+
+    <!-- lands-->
+    <section id="lands" class="section">
+        <div class="lands-nav">
+            <h1 class="lands-head"> الاراضي المتوفرة</h1>    
+            <select class="lands-select">
+                <option value="highToLow">price:high to low</option>
+                <option value="lowToHigh"> price low to high</option>
+        </select>                                                                                                                                           
+        </div>
+      
+        <div class="cards-container">
+            <div class="card">
+                <figure class="card-img-wrapper">
+                    <img class="card-img" src="./assets/abdoon1.webp">
+                </figure>
+                <div class="card-info">
+                    <ul class="card-list">
+                        <li class="card-li"><p>price:2000000</p></li>
+                        <hr>
+                        <li class="card-li"><p>area: 1000m^2</p></li>
+                        <hr>
+                        <li class="card-li"><p>loctaion: abdoon</p></li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure class="card-img-wrapper">
+                    <img class="card-img" src="./assets/abdoon1.webp">
+                </figure>
+                <div class="card-info">
+                    <ul class="card-list">
+                        <li class="card-li"><p>price:2000000</p></li>
+                        <hr>
+                        <li class="card-li"><p>area: 1000m^2</p></li>
+                        <hr>
+                        <li class="card-li"><p>loctaion: abdoon</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure class="card-img-wrapper">
+                    <img class="card-img" src="./assets/abdoon1.webp">
+                </figure>
+                <div class="card-info">
+                    <ul class="card-list">
+                        <li class="card-li"><p>price:2000000</p></li>
+                        <hr>
+                        <li class="card-li"><p>area: 1000m^2</p></li>
+                        <hr>
+                        <li class="card-li"><p>loctaion: abdoon</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure class="card-img-wrapper">
+                    <img class="card-img" src="./assets/abdoon2.webp">
+                </figure>
+                <div class="card-info">
+                    <ul class="card-list">
+                        <li class="card-li"><p>price:2000000</p></li>
+                        <hr>
+                        <li class="card-li"><p>area: 1000m^2</p></li>
+                        <hr>
+                        <li class="card-li"><p>loctaion: abdoon</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure class="card-img-wrapper">
+                    <img class="card-img" src="./assets/salt.webp">
+                </figure>
+                <div class="card-info">
+                    <ul class="card-list">
+                        <li class="card-li"><p>price:20000</p></li>
+                        <hr>
+                        <li class="card-li"><p>area: 500m^2</p></li>
+                        <hr>
+                        <li class="card-li"><p>loctaion: salt</p></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <figure class="card-img-wrapper">
+                    <img class="card-img" src="./assets/bnyat1.jpeg">
+                </figure>
+                <div class="card-info">
+                    <ul class="card-list">
+                        <li class="card-li"><p>price:20000</p></li>
+                        <hr>
+                        <li class="card-li"><p>area: 75000m^2</p></li>
+                        <hr>
+                        <li class="card-li"><p>loctaion: bnyat</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure class="card-img-wrapper">
+                    <img class="card-img" src="./assets/jarash1.jpg">
+                </figure>
+                <div class="card-info">
+                    <ul class="card-list">
+                        <li class="card-li"><p>price:20000</p></li>
+                        <hr>
+                        <li class="card-li"><p>area: 1000m^2</p></li>
+                        <hr>
+                        <li class="card-li"><p>loctaion: jarash</p></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <figure class="card-img-wrapper">
+                    <img class="card-img" src="./assets/abdoon1.webp">
+                </figure>
+                <div class="card-info">
+                    <ul class="card-list">
+                        <li class="card-li"><p>price:2000000</p></li>
+                        <hr>
+                        <li class="card-li"><p>area: 1000m^2</p></li>
+                        <hr>
+                        <li class="card-li"><p>loctaion: abdoon</p></li>
+                    </ul>
+                </div>
+            </div>
+
+
+       </section>
+
+
+     <section id="table">
+        <div class="lands-nav">
+            <h1 class="lands-head">
+                prices per m^2
+            </h1>
+            </div>
+            <div class="table-container">
+            <table class="table1" border="1px fa-solid">
+                <thead>
+                    <tr>
+                    <th> loctaion</th>
+                    <th> price per m^2</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td> abdoon</td>
+                    <td> 1000</td>
+                </tr>
+                <tr>
+                    <td>bnyat</td>
+                    <td> 750</td>
+                </tr>
+                <tr>
+                    <td> jarash</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                     <td> sahab</td>
+                     <td> 50</td>
+                    </tr>
+            </table>
+            </div>
+           </section>
+    </div>
+</div>
+<footer>
+    <h1 class="logo1 footer-logo"> Kamoon</h1>
+    <ul class=" footer-list">
+        <li class=" footer-link"><a class="white" href=""> about</a></li>
+        <li class="footer-link"><a class="white" href=""> login</a></li>
+       
+        <li class=" footer-link"><a class="white" href=""> home</a></li>
+        <li class=" footer-link"><a class="white" href="#lands"> lands</a></li>
+    </ul>
+    <p id="copyright"> all rights reserverd &copy; to last bench</p>
+</footer>
+
+<!-- starter animation-->
+
+
+    <div id="starter">
+        <div class="starter-container">
+        <h1 class="kamoon"> كمون</h1>
+        <h1 class="sec">سمسارك<span class="yellow"> المضمون</span></h1>
+       </div>
+        <img src="./assets/semi circle.svg" class="shape shape--0">
+        <img src="./assets/circle.svg" class="shape shape--1">
+        <img src="./assets/squiggly.svg" class="shape shape--2">
+        <img src="./assets/circle.svg" class="shape shape--3">
+        <img src="./assets/triangle.svg" class="shape shape--4">
+        <img src="./assets/circle.svg" class="shape shape--5">
+        <img src="./assets/squiggly.svg" class="shape shape--6">
+        <img src="./assets/circle.svg" class="shape shape--7">
+        <img src="./assets/semi circle.svg" class="shape shape--8">
+    </div>
+ 
+</body>
+</html>
